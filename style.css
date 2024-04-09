@@ -163,13 +163,7 @@ body {
 
 header, nav, section, footer {
     margin-bottom: 20px;
-}
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
 }
 
 nav ul {
@@ -188,7 +182,7 @@ nav a {
 }
 
 section {
-    padding: 20px;
+    padding: 40px;
     background-color: #f4f4f4;
 }
 
@@ -209,6 +203,23 @@ section p {
 .image-container img {
     width: 30%;
     margin-bottom: 20px;
+}
+
+.dog_pic {
+  border-radius: 35%;
+}
+
+.dog_pic img:hover {
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff7f00, 0 0 70px #ff7f00, 0 0 80px #ff7f00, 0 0 100px #ff7f00, 0 0 150px #ff7f00;
+  }
+  to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #ff7f00, 0 0 40px #ff7f00, 0 0 50px #ff7f00, 0 0 100px #ff7f00, 0 0 110px #ff7f00, 0 0 130px #ff7f00, 0 0 170px #ff7f00;
+  }
 }
 
 footer {

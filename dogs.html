@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Dogs</title>
+    <title>Dogs</title>
     <link rel="stylesheet" href="./style.css">
+    <script src=./dogs.js></script>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to Amazing Dogs!</h1>
+    <header class="header">
+        <nav class="header__nav layout">
+            <h1 class="logotext"> Florida Adoption Center </h1>
+            <a class="header__link" href="index.html">Home</a>
+            <a class="header__link" href="dogs.html">Adoptable Dogs</a>
+            <a class="header__link" href="cats.html">Adoptable Cats</a>
+
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#breeds">Popular Breeds</a></li>
-            <li><a href="#facts">Interesting Facts</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
     <section id="breeds">
         <h2>Popular Dog Breeds</h2>
         <p>Here are some popular dog breeds:</p>
@@ -45,16 +44,15 @@
         <h2>Gallery</h2>
         <p>Check out these pictures:</p>
         <div class="image-container">
-            <img src="dog1.jpg" alt="Dog 1">
-            <img src="dog2.jpg" alt="Dog 2">
-            <img src="dog3.jpg" alt="Dog 3">
+            <div class="dog_pic">
+                <img class="dog_pic" src="./assets/alvan-nee-brFsZ7qszSY-unsplash.jpg" alt="Dog 1">
+                <img class="dog_pic" src="./assets/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg" alt="Dog 2">
+                <img class="dog_pic" src="./assets/richard-brutyo-Sg3XwuEpybU-unsplash.jpg" alt="Dog 3">
+            </div>
         </div>
     </section>
-    <footer id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or inquiries, feel free to contact us:</p>
-        <p>Email: Group 10</p>
-    </footer>
+    <footer class="footer">&copy 2024 Folse, Keiner, and Gatson </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
