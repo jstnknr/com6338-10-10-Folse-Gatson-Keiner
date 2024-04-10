@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dogs</title>
+    <link rel="stylesheet" href="dog.css">
+</head>
+
+<body class="body__index">
+    <header class="header">
+        <nav class="header__nav layout">
+            <img src="paw logo.png" class="logo">
+            <h1 class="logotext"> Florida Adoption Center </h1>
+            <a class="header__link" href="index.html">Home</a>
+            <a class="header__link" href="dogs.html">Adoptable Dogs</a>
+            <a class="header__link" href="cats.html">Adoptable Cats</a>
+            
+        </nav>
+    </header>
+    <h1> Adoptable Dogs </h1>
+    <section id="breeds">
+        <h2>Popular Dog Breeds</h2>
+        <p>Here are some popular dog breeds:</p>
+        <ul>
+            <li>Labrador Retriever</li>
+            <li>German Shepherd</li>
+            <li>Golden Retriever</li>
+            <li>Bulldog</li>
+            <li>Beagle</li>
+        </ul>
+    </section>
+    <section id="facts">
+        <h2>Interesting Facts About Dogs</h2>
+        <p>Dogs are amazing creatures. Here are some interesting facts:</p>
+        <ul>
+            <li>Dogs have an incredible sense of smell, far superior to humans.</li>
+            <li>The Basenji dog breed doesn't bark, but they can yodel.</li>
+            <li>Dogs are capable of understanding up to 250 words and gestures.</li>
+            <li>The Newfoundland breed has webbed feet and is an excellent swimmer.</li>
+        </ul>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Check out our current dogs on sale!</p>
+        <button id="button" onclick="renderDog()">Generate a Dog</button>
+        <div id="dogContainer">
+            <img id="dogImage" src="" alt="Random Dog Image">
+            <p id="dogBreed"></p>
+            <p id="dogGroup"></p>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer">&copy 2024 Folse, Keiner, and Gatson </footer>
+    <script src="dogs.js"></script>
+  
+</body>
+
+</html>
