@@ -11,6 +11,10 @@
     background-size: contain;
     background-attachment: scroll;
 }
+img {
+  width: 500px;
+}
+.buttonCat
 
 .logo {
     position: absolute;
@@ -79,7 +83,7 @@
   text-align: center;
 }
 
-.button {
+.catButton {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 24px;
     margin: 20px 10px;
@@ -208,7 +212,7 @@
     color: white;
  }
 
- #facts {
+ #catFacts {
     text-align: center;
     color: white;
     list-style-position: inside;
