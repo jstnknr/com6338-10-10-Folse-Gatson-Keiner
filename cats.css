@@ -1,219 +1,220 @@
-.body__index {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    margin: 0;
-    background-color:rgb(64, 103, 107);
-    background-position: center top 70px;
-    margin-top: 5px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: scroll;
-}
 img {
   width: 500px;
 }
-.buttonCat
+
+.body__index {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background-color:rgb(64, 103, 107);
+  background-position: center top 70px;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+}
 
 .logo {
-    position: absolute;
-    left: 2%;
-    top: 2%;
-    height: 70px;
-    width: 70px;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  height: 70px;
+  width: 70px;
 }
 
 .logotext {
-    position: absolute;
-    color: black;
-    left: 8%;
-    top: 2%;
-    font-size: 20px;
+  position: absolute;
+  color: black;
+  left: 8%;
+  top: 2%;
+  font-size: 20px;
 }
 
 .header {
-    background-color: rgb(135, 235, 228);
-    padding: 20px;
-    font-size: 1.2rem;
+  background-color: rgb(135, 235, 228);
+  padding: 20px;
+  font-size: 1.2rem;
 }
 
 .header__nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: auto;
-    margin-bottom: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: auto;
+  margin-bottom: auto;
 }
 
 .header__link {
-    text-decoration: none;
-    color: rgb(2, 2, 2);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    padding: 15px 30px;
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 15px 30px;
 }
 
 .header__link:hover {
-    text-decoration: underline;
-    color: rgb(34, 28, 153);
+  text-decoration: underline;
+  color: rgb(34, 28, 153);
 }
 
 .main {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 100px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 50px 25em;
-    background-color: white;
-    border-radius: 7px;
-    text-align: center;
-}
-
-.article__h1 {
-    font-size: 1.6rem;
-    text-align: center;
-}
-
-.article__h2 {
-  font-size: 1.1rem;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 50px 25em;
+  background-color: white;
+  border-radius: 7px;
   text-align: center;
 }
 
-.catButton {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 24px;
-    margin: 20px 10px;
-    border-radius: 12px;
-    background-color: rgb(135, 235, 228);
-    color: black;
-    border: 2px solid;
-    font-size: 1rem;
-    cursor:pointer;
+.article__h1 {
+  font-size: 1.6rem;
+  text-align: center;
 }
 
-.button:hover {
-  color: navy;
+.article__h2 {
+font-size: 1.1rem;
+text-align: center;
+}
+
+.buttonCat {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 24px;
+  margin: 20px 10px;
+  border-radius: 12px;
+  background-color: rgb(135, 235, 228);
+  color: black;
+  border: 2px solid;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+.buttonCat:hover {
+color: navy;
+background-color: rgb(103, 192, 186);
 }
 
 .footer {
-    background-color:rgb(135, 235, 228);;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 10px;
-    margin-top: auto;
-    font-size: 0.9rem;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color:rgb(135, 235, 228);;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (max-width:500px) {
-    .logo {
-        display: none;
-    }
+  .logo {
+      display: none;
+  }
 }
 /* Media query for iPhone XR */
 @media only screen and (max-width: 928px) {
-    .header {
-      padding: 10px;
-      font-size: 1rem;
-    }
-  
-    .header__nav {
-      justify-content: center;
-      margin: 0;
-    }
-  
-    .header__link {
-      padding: 10px 20px;
-    }
-  
-    .main {
-      margin: 20px;
-    }
-  
-    .article__h1 {
-      font-size: 1.1rem;
-    }
-    .button {
-      padding: 8px 20px;
-      font-size: 0.8rem;
-    }
-  
-    .footer {
-      padding: 5px;
-    }
-    .logo {
-        height: 40px;
-        width: 40px;
-    }
-    .logotext {
-        display: none;
-    }
-  }
-  
-  /* Media query for iPad */
-  @media only screen and (min-width: 768px) and (max-width: 1440px) {
-    .header {
-      padding: 15px;
-      font-size: 1.1rem;
-    }
-  
-    .header__nav {
-      justify-content: flex-end;
-      margin: 0;
-    }
-  
-    .header__link {
-      padding: 12px 25px;
-    }
-  
-    .main {
-      margin: 50px 15%;
-    }
-  
-    .article__h1 {
-      font-size: 1.2rem;
-    }
-  
-    .button {
-      padding: 10px 24px;
-      font-size: 0.9rem;
-    }
-  
-    .footer {
-      padding: 10px;
-    }
-    .logo {
-        height: 50px;
-        width: 50px;
-    }
-    .logotext {
-        left: 8%;
-        top: 2%;
-    }
+  .header {
+    padding: 10px;
+    font-size: 1rem;
   }
 
-  #breeds {
-    text-align: center;
-    color: white;
-    list-style-position: inside;
+  .header__nav {
+    justify-content: center;
+    margin: 0;
   }
 
- h1 {
-    text-align: center;
-    color: white;
- }
+  .header__link {
+    padding: 10px 20px;
+  }
 
- #gallery {
-    text-align: center;
-    color: white;
- }
+  .main {
+    margin: 20px;
+  }
 
- #catFacts {
-    text-align: center;
-    color: white;
-    list-style-position: inside;
- }
+  .article__h1 {
+    font-size: 1.1rem;
+  }
+  .button {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    padding: 5px;
+  }
+  .logo {
+      height: 40px;
+      width: 40px;
+  }
+  .logotext {
+      display: none;
+  }
+}
+
+/* Media query for iPad */
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .header {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  .header__nav {
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .header__link {
+    padding: 12px 25px;
+  }
+
+  .main {
+    margin: 50px 15%;
+  }
+
+  .article__h1 {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+  .logo {
+      height: 50px;
+      width: 50px;
+  }
+  .logotext {
+      left: 8%;
+      top: 2%;
+  }
+}
+
+#breeds {
+  text-align: center;
+  color: white;
+  list-style-position: inside;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+#gallery {
+  text-align: center;
+  color: white;
+}
+
+#catFacts {
+  text-align: center;
+  color: white;
+  list-style-position: inside;
+}
