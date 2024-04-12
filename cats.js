@@ -25,6 +25,7 @@
             console.log(data)
             const catImage = document.createElement('img')
              catImage.src= data[0].url;
+             catImage.alt="Random image of a cat"
              catContainer.appendChild(catImage)
     
         })
