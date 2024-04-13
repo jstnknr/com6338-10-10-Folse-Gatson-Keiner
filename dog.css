@@ -133,9 +133,16 @@
     .article__h1 {
       font-size: 1.1rem;
     }
-    .button {
-      padding: 8px 20px;
-      font-size: 0.8rem;
+    #button {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px 24px;
+      margin: 20px 10px;
+      border-radius: 12px;
+      background-color: rgb(135, 235, 228);
+      color: black;
+      border: 2px solid;
+      font-size: 1rem;
+      cursor:pointer;
     }
   
     .footer {
@@ -174,7 +181,7 @@
       font-size: 1.2rem;
     }
   
-    .button {
+    #button {
       font-family: Arial, Helvetica, sans-serif;
       padding: 10px 24px;
       margin: 20px 10px;
