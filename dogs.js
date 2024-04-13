@@ -12,9 +12,10 @@ const headers = new Headers({
   const generateDogButton = document.getElementById("button");
   generateDogButton.onclick = renderDog
  
-  const dogImage = document.getElementById("dogImage");
   const dogBreed = document.getElementById("dogBreed");
-  const dogGroup= document.getElementById("dogGroup")
+  const dogContainer= document.getElementById("dogContainer")
+
+  
 
   function renderDog () {
  
@@ -22,8 +23,11 @@ const headers = new Headers({
     .then(response => response.json())
     .then(data => {
         console.log(data)
-        dogImage.src = data[0].url;
+        const dogImage = document.createElement('img')
+             dogImage.src= data[0].url;
+             dogImage.alt="Random Image of a Dog"
         dogBreed.innerHTML= "Dog Breed:" + JSON.stringify (data[0].breeds[0].name);
+        dogContainer.appendChild(dogImage)
     })
     .catch(error => console.log('error', error)); 
 
