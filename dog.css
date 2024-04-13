@@ -79,7 +79,7 @@
   text-align: center;
 }
 
-.button {
+#button {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 24px;
     margin: 20px 10px;
@@ -91,7 +91,7 @@
     cursor:pointer;
 }
 
-.button:hover {
+#button:hover {
   color: navy;
 }
 
@@ -175,8 +175,15 @@
     }
   
     .button {
+      font-family: Arial, Helvetica, sans-serif;
       padding: 10px 24px;
-      font-size: 0.9rem;
+      margin: 20px 10px;
+      border-radius: 12px;
+      background-color: rgb(135, 235, 228);
+      color: black;
+      border: 2px solid;
+      font-size: 1rem;
+      cursor:pointer;
     }
   
     .footer {
