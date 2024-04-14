@@ -33,3 +33,11 @@
     
     }
     
+    window.onload = function welcomeAlert() {
+      var userName = localStorage.getItem("userName");
+      if (userName) {
+        alert("Hello, " + userName + "! Welcome to the cat page! Meow!");
+      } else {
+        alert("Welcome to the cat page! Meow!")
+          }
+        }

@@ -32,3 +32,12 @@ const headers = new Headers({
     .catch(error => console.log('error', error)); 
 
 }
+
+window.onload = function welcomeAlert() {
+  var userName = localStorage.getItem("userName");
+  if (userName) {
+    alert("Hello, " + userName + "! Welcome to the dog page! WOOF!");
+  } else {
+    alert("Welcome to the dog page! WOOF!")
+      }
+    }

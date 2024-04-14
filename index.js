@@ -8,3 +8,11 @@ document.getElementById("randomButton").addEventListener("click", function() {
     
     window.location.href = links[randomIndex];
 });
+
+function saveName() {
+    var name = document.getElementById("nameInput").value;
+    console.log(name)
+    localStorage.setItem("userName", name);
+  }
+
+  
