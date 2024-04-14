@@ -9,7 +9,9 @@ document.getElementById("randomButton").addEventListener("click", function() {
     window.location.href = links[randomIndex];
 });
 
-function saveName() {
+var nameButton = document.getElementById('nameButton')
+
+nameButton.onclick = function saveName() {
     var name = document.getElementById("nameInput").value;
     console.log(name)
     localStorage.setItem("userName", name);
